@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewData["Title"] = "Confirm";
+}
+
+<h1>Confirm</h1>
+
+@model PizzaSystem.Models.Order
+
+@{
+    ViewData["Title"] = "Confirm";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url(/image.jpg);
+            height: 500px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+    </style>
+</head>
+<div class="bg-white m-4 p-4 rounded">
+    <h4 class="text-center">Confirm Details</h4>
+    <hr />
+    <form asp-action="SaveOrder">
+        <dl class="row">
+            <dt class="col-sm-2">
+                Pizza Name
+            </dt>
+            <dd class="col-sm-10">
+                @TempData["PizzaName"]
+            </dd>
+            <dt class="col-sm-2">
+                Pizza Price
+            </dt>
+            <dd class="col-sm-10">
+                @TempData["PizzaPrice"]
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CustomerName)
+                @Html.HiddenFor(model => model.CustomerName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CustomerPhone)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CustomerPhone)
+                @Html.HiddenFor(model => model.CustomerPhone)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+                @Html.HiddenFor(model => model.Address)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Quantity)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Quantity)
+                @Html.HiddenFor(model => model.Quantity)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Toppings)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Toppings)
+                @Html.HiddenFor(model => model.Toppings)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CrustType)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CrustType)
+                @Html.HiddenFor(model => model.CrustType)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Amount)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Amount)
+                @Html.HiddenFor(model => model.Amount)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.DeliveryDate)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.DeliveryDate)
+                @Html.HiddenFor(model => model.DeliveryDate)
+            </dd>
+        </dl>
+        <div class="form-group">
+            <p>
+                <h3>Once Ordered Cannot be Cancelled.</h3>
+            </p>
+            <input type="submit" value="Confirm Order" class="btn btn-primary "onclick="alert('Once Ordered Cannot be Cancelled');"/>
+            <input type="button" class="btn btn-primary" value="Back" onclick="location.href='@Url.Action("Index", "Pizza")'" />
+            @*<input type="button" class="btn btn-primary" value="Back" onclick="location.href='@Url.Action("Index", "Order")'"/>*@
+        </div>
+    </form>
+</div>
+

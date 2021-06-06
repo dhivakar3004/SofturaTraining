@@ -1,0 +1,71 @@
+﻿@model IEnumerable<PizzaClient.Models.Pizza>
+
+@{
+    ViewData["Title"] = "HomePage";
+}
+
+<h1>HomePage</h1>
+
+@*<p>
+    <a asp-action="Create">Create New</a>
+</p>*@
+
+<table class="table">
+    <thead>
+        <tr>
+            @*<th>
+                @Html.DisplayNameFor(model => model.PizzaId)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Speciality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Isveg)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+                
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.PizzaId)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Speciality)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Isveg)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+               
+            </td>
+            <td>
+                
+              @*<img src="@Url.Content(@ModelItem => model.Image)"/>*@
+            </td>
+            <td>
+                <img src="~/Image/@item.Image" width="100" height="100" alt="New"/>
+            </td>
+            
+            <td>
+                <input type="button" class="btn btn-primary" value="Order Now" onclick="location.href='@Url.Action("OrderDetails", "Pizza",new { id = item.PizzaId, name = item.Name, price = item.Price })'" />
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

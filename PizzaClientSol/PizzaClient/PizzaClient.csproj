@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Image\Pizza1.jpg" />
+    <None Include="wwwroot\Image\Pizza2.jpg" />
+    <None Include="wwwroot\Image\Pizza3.jpg" />
+    <None Include="wwwroot\Image\Pizza4.jpg" />
+    <None Include="wwwroot\Image\Pizza5.jpg" />
+    <None Include="wwwroot\Image\Pizza6.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+﻿@model IEnumerable<task1inWebApp.Models.UserModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>New User Or Login again</h1>
+
+<p>
+    <a asp-action="Create">Register New</a>
+</p>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+          >
+        </tr>
+}
+    </tbody>
+</table>*@

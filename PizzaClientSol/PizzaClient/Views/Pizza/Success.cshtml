@@ -1,0 +1,70 @@
+﻿@model PizzaClient.Models.OrderDetails
+
+@{
+    ViewData["Title"] = "Success";
+}
+
+<h1>Success</h1>
+
+@*<div>
+    <h4>OrderDetails</h4>
+    <hr />
+    <dl class="row">
+       
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Crust)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Crust)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.quantity)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.quantity)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Toppings)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Toppings)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.DeliveryDate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.DeliveryDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+    </dl>
+</div>*@
+<div>
+    <h3>Your Order is Placed Successfully </h3>
+    <h4>
+        Thank you For Ordering!!!
+    </h4>
+    <div style="image-orientation:initial" >
+        <img src="~/Image/PizzaDelivery.jpg" width=" 500" height="500"/>
+    </div>
+    <br />
+    <input type="button" class="btn btn-primary" value="Back To HomePage " onclick="location.href='@Url.Action("Home", "Pizza")'" />
+
+
+</div>

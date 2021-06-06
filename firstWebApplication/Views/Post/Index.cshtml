@@ -1,0 +1,18 @@
+﻿@model IEnumerable<FirstWebApplication.Models.Post>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    @foreach(var item in Model)
+    {
+    @item.Id
+    <br />
+    @item.PostText
+    <br />
+    @item.Category
+    <br />
+    @Html.ActionLink("Edit","Edit",new{id=item.Id})
+    }
+</p>

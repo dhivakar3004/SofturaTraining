@@ -1,0 +1,5 @@
+D:\Training\BankTesting\BankTesting\obj\Debug\net5.0\BankTesting.csprojAssemblyReference.cache
+D:\Training\BankTesting\BankTesting\obj\Debug\net5.0\BankTesting.GeneratedMSBuildEditorConfig.editorconfig
+D:\Training\BankTesting\BankTesting\obj\Debug\net5.0\BankTesting.AssemblyInfoInputs.cache
+D:\Training\BankTesting\BankTesting\obj\Debug\net5.0\BankTesting.AssemblyInfo.cs
+D:\Training\BankTesting\BankTesting\obj\Debug\net5.0\BankTesting.csproj.CoreCompileInputs.cache
