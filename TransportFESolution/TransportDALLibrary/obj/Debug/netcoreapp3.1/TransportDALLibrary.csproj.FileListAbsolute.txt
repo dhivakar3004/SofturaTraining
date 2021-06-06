@@ -1,0 +1,9 @@
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.csprojAssemblyReference.cache
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.AssemblyInfoInputs.cache
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.AssemblyInfo.cs
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.csproj.CoreCompileInputs.cache
+D:\Training\TransportFESolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.deps.json
+D:\Training\TransportFESolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.dll
+D:\Training\TransportFESolution\TransportDALLibrary\bin\Debug\netcoreapp3.1\TransportDALLibrary.pdb
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.dll
+D:\Training\TransportFESolution\TransportDALLibrary\obj\Debug\netcoreapp3.1\TransportDALLibrary.pdb

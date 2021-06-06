@@ -1,0 +1,4 @@
+D:\Training\UnderstandingLinqSol\EFandLinqProject\obj\Debug\netcoreapp3.1\EFandLinqProject.csprojAssemblyReference.cache
+D:\Training\UnderstandingLinqSol\EFandLinqProject\obj\Debug\netcoreapp3.1\EFandLinqProject.AssemblyInfoInputs.cache
+D:\Training\UnderstandingLinqSol\EFandLinqProject\obj\Debug\netcoreapp3.1\EFandLinqProject.AssemblyInfo.cs
+D:\Training\UnderstandingLinqSol\EFandLinqProject\obj\Debug\netcoreapp3.1\EFandLinqProject.csproj.CoreCompileInputs.cache
