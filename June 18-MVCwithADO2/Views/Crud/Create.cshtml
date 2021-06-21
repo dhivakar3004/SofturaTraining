@@ -1,0 +1,67 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{
+    ViewBag.Title = "Create";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="Width=device-width" />
+    <title> create</title>
+</head>
+<body>
+    <div>
+        <form id="formNEwBook" method="Post" action="@Url.Action("InsertRecord")">
+            Book Title : <input name="txtTitle" />
+            <br />
+            <label> Author Name:</label>
+            <select name="txtAname">
+                <option selected> Select AuthorName </option>
+                @foreach (DataRow dr in Model.Rows)
+                {
+                    <option value="@dr["AuthorName"].ToString()">@dr["AuthorName"].ToString()</option>
+                }
+            </select>
+            @*Author Id : <input name="txtAid" />*@
+            <br />
+            Price : <input name="txtPrice" />
+            <br />
+            <input type="submit" value="Submit" name="action" />
+            <input type="submit" value="Cancel" name="action" />
+
+        </form>
+    </div>
+    <div>
+        <form method="Post" name="Dispaly">
+            <h3>Authors Details</h3>
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+
+                        <thead>
+                            <tr>
+                                <td>Author Id</td>
+                                <td> AuthorName </td>
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["AuthorId"].ToString()</td>
+                                <td>@dr["AuthorName"].ToString()</td>
+                            </tr>
+                        }
+                    </table>
+
+                }
+            }
+        </form>
+    </div>
+</body>
+</html>
+
+
+<form>
+</form>

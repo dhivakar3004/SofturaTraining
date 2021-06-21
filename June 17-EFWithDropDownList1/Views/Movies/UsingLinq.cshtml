@@ -1,0 +1,16 @@
+﻿@*@model.IEnumerable<EFWithDropDownList1.Models.tbl_movies>*@
+@*@{
+    ViewBag.Title = "UsingLinq";
+}*@
+
+<h2>UsingLinq</h2>
+<body>
+    <div>
+        <table>
+            <tr>
+                Movies Name
+            </tr>
+            @Html.DropDownList("Movie List", (IEnumerable<SelectListItem>)ViewData["Moie"])
+        </table>
+    </div>
+</body>

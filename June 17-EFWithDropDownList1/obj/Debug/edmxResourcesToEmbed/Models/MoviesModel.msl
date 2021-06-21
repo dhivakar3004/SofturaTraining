@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BooksDbModelStoreContainer" CdmEntityContainer="BooksDbEntities">
+    <EntitySetMapping Name="tbl_movies">
+      <EntityTypeMapping TypeName="BooksDbModel.tbl_movies">
+        <MappingFragment StoreEntitySet="tbl_movies">
+          <ScalarProperty Name="S_No" ColumnName="S_No" />
+          <ScalarProperty Name="Movie_Name" ColumnName="Movie_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

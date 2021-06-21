@@ -1,0 +1,38 @@
+﻿
+@using System.Data
+@model System.Data.DataTable
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<body>
+    <div>
+        <form id="formedit" method="post" action="@Url.Action("EmpDept")"> >
+            <label>
+                <h2> Choose a Depatment: </h2>
+            </label>
+
+           @Html.DropDownList("Departments", (IEnumerable<SelectListItem>)ViewData["Departments"])
+
+            <input type="Submit" value="Submit" name="action" />
+        </form>
+</div>
+    @*<h3> Department Details</h3>
+    <div>
+        <h4> List of Department </h4>
+        <select name="tDptname">
+            <option selected>
+                DepartNames
+            </option>
+            @foreach(DataRow dr in Model.Rows)
+            {
+                <option value="@dr["Name"].ToString()">@dr["Name"].ToString()</option>
+            }
+        </select>
+        <@Html.DropDownList("dept", new List<SelectListItem> { SelectListItem })/>
+        @Html.DropDownList(m => m.Model.GetDepartment)
+    
+    </div>*@
+</body>

@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<body>
+    <div>
+        <table border="1" >
+            <tr >
+                <td bgcolor="yellow"> Technique </td>
+                <td bgcolor="yellow"> Data </td>
+            </tr>
+            <tr>
+                <td> HardCoded Data</td>
+                <td>
+                    @Html.DropDownList("MovieList", new List<SelectListItem>
+               {
+                   new SelectListItem{Text="Diwali" ,Value="1"},
+                   new SelectListItem{Text="Petta" ,Value="2"},
+                   new SelectListItem{Text="Thuppakki" ,Value="3"},
+                   new SelectListItem{Text="7 am Arivu" ,Value="4"},
+                   new SelectListItem{Text="24" ,Value="5"},
+                   new SelectListItem{Text="Karnan" ,Value="6"},
+                   new SelectListItem{Text="Panga" ,Value="7"},
+                   new SelectListItem{Text="Dhoni" ,Value="8"},
+               })
+                </td>
+
+            </tr>
+            <tr>
+                <td> ViewBag Data</td>
+                <td>@Html.DropDownList("MovieListBag", (IEnumerable<SelectListItem>)ViewBag.MovList)</td>
+            </tr>
+            <tr>
+                <td>Data from ViewData </td>
+                <td>@Html.DropDownList("MovieListVData", (IEnumerable<SelectListItem>)ViewData["MovdataList"])</td>
+            </tr>
+            <tr>
+                <td>Data from TempData </td>
+                <td>@Html.DropDownList("MovieListTemp", (IEnumerable<SelectListItem>)TempData["MovTempList"])</td>
+            </tr>
+            <tr>
+                <td>Data from Enum </td>
+                <td>@Html.DropDownList("MovieListEnum", new SelectList(ViewBag.EnumMl,"Value" ,"Text"))</td>
+            </tr>
+        </table>
+    </div>
+</body>
+

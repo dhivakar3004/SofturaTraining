@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script>
+        $(document).ready(function () {
+            //$("#p1").mouseenter(function () {
+            //    alert("your mouse entered the paragraph");
+
+            //})
+            $("#p1").mouseleave(function () {
+                $(this).css("background-color", "aqua");
+                //alert("your mouse entered the paragraph");
+
+            })
+
+        })
+    </script>-->
+    <!--<script>
+        $("li").click(function () {
+            alert($(this).text());
+            $("#p1").mouseleave(function () {
+                $(this).css("background-color", "aqua");
+                //alert("your mouse entered the paragraph");
+
+            });
+
+        })
+    </script>-->
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#1").fadeIn();
+                $("#2").fadeIn("slow");
+                $("#3").fadeIn(3000);
+                $("#4").fadeIn(4000);
+            })
+        })
+    </script>
+
+
+</head>
+<body>
+    <!--<div>
+        <h2>
+            Explore Mouse Enter
+        </h2>
+        <p id="p1"> Bring your cursor to the paragraph..</p>
+    </div>-->
+    <!--<ul>
+        <li> Chocolates </li>
+        <li> Ice Creames </li>
+        <li> Fruits </li>
+    </ul>
+    <div>
+        <table border="1">
+            <tr>
+                <td>S.No</td>
+                <td> Names </td>
+            </tr>
+            <tr>
+                <td> 1 </td>
+                <td> Aarambam</td>
+            </tr>
+            <tr>
+                <td> 2 </td>
+                <td> Bhoomi</td>
+            </tr>
+            <tr>
+                <td> 3 </td>
+                <td> CID</td>
+            </tr>
+            <tr>
+                <td> 4 </td>
+                <td> Dharala Prabhu</td>
+            </tr>-->
+
+        <!--</table>-->
+        <!--<script>
+            $("table").hover(function () {
+                $("tr:even").css.("background-color", "aqua");
+
+            })
+        </script>-->
+    <!--</div>-->
+    <div>
+        <button> Click to fade in boxes</button>
+        <br />
+        <div id="1" style="width:100px;height:100px;display:none;background-color:aqua"></div>
+        <div id="2" style="width:100px;height:100px;display:none;background-color:magenta"></div>
+        <div id="3" style="width:100px;height:100px;display:none;background-color:lightpink"></div>
+        <div id="4" style="width:100px;height:100px;display:none;background-color:mediumblue"></div>
+
+
+    </div>
+ 
+</body>
+</html>

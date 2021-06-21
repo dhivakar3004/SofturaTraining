@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+}
+
+<h2>Home</h2>
+<body>
+    <h4><label> ViewBag:</label>
+    @ViewBag.MyTime</h4>
+    <h4><label> TempData:</label>
+        @TempData.Peek("TempTime").ToString();
+    </h4>
+</body>
+

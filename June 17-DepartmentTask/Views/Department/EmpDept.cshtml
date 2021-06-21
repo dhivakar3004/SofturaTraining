@@ -1,0 +1,37 @@
+﻿@using System.Data
+@{
+    ViewBag.Title = "EmpDept";
+}
+
+<h2>EmpDept</h2>
+
+<body>
+    <div>
+        @{ if(Model.Rows.Count>0)
+            {
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <td> Business Entity id</td>
+                            <td>First Name</td>
+                            <td> Gender </td>
+                            <td> Marital status</td>
+                            <td> HireDate</td>
+                        </tr>
+                    </thead>
+                    @foreach (DataRow dr in Model.Rows)
+                    {
+                <tr>
+                    <td>@dr["BusinessEntityid"].ToString()</td>
+                    <td>@dr["FirstName"].ToString()</td>
+                    <td>@dr["Gender"].ToString() </td>
+                    <td>@dr["Maritalstatus"].ToString()</td>
+                    <td>@dr["HireDate"].ToString()</td>
+                </tr>
+                    }
+
+                </table>
+            }
+        }
+    </div>
+</body>

@@ -1,0 +1,42 @@
+﻿@using System.Data
+@model System.Data.DataTable
+@{
+        ViewBag.Title = "AuthorDisplay";
+    }
+<html>
+<head>
+    <meta name="viewport" content="Width=device-Width" />
+    <title>Authors</title>
+</head>
+<body>
+    <div>
+        <form method="Post" name="Display">
+            <h2>AuthorDisplay</h2>
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+
+                        <thead>
+                            <tr>
+                                <td>Author Id</td>
+                                <td> AuthorName </td>                                
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["AuthorId"].ToString()</td>
+                                <td>@dr["AuthorName"].ToString()</td>                             
+                            </tr>
+                        }
+                    </table>
+
+                }
+            }
+        </form>
+    </div>
+</body>
+</html>
+
+

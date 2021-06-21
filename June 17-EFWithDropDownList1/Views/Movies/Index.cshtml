@@ -1,0 +1,27 @@
+﻿
+@*@{
+    ViewBag.Title = "Index";
+}*@
+
+<h2>Index</h2>
+<div>
+    <h2> Movies List </h2>
+    <label> Movie from Entity Framework </label>
+    @Html.DropDownList("Movie List", (IEnumerable<SelectListItem>)ViewData["MovEF"])
+
+    <br />
+    <label> Books from Entity Framework </label>
+
+    @Html.DropDownList("Book List", (IEnumerable<SelectListItem>)ViewData["BookEF"])
+
+    <br />
+    <label> Book from ViewBag </label>
+    @Html.DropDownList("Book List1", (IEnumerable<SelectListItem>)ViewBag.BookEF1)
+
+
+
+
+
+
+</div>
+

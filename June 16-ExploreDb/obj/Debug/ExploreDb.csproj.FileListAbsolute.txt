@@ -1,0 +1,12 @@
+D:\Training\ExploreDb\ExploreDb\bin\Debug\ExploreDb.exe.config
+D:\Training\ExploreDb\ExploreDb\bin\Debug\ExploreDb.exe
+D:\Training\ExploreDb\ExploreDb\bin\Debug\ExploreDb.pdb
+D:\Training\ExploreDb\ExploreDb\obj\Debug\ExploreDb.csprojAssemblyReference.cache
+D:\Training\ExploreDb\ExploreDb\obj\Debug\ExploreDb.csproj.CoreCompileInputs.cache
+D:\Training\ExploreDb\ExploreDb\obj\Debug\ExploreDb.exe
+D:\Training\ExploreDb\ExploreDb\obj\Debug\ExploreDb.pdb
+D:\Training\ExploreDb\ExploreDb\bin\Debug\EntityFramework.dll
+D:\Training\ExploreDb\ExploreDb\bin\Debug\EntityFramework.SqlServer.dll
+D:\Training\ExploreDb\ExploreDb\bin\Debug\EntityFramework.xml
+D:\Training\ExploreDb\ExploreDb\bin\Debug\EntityFramework.SqlServer.xml
+D:\Training\ExploreDb\ExploreDb\obj\Debug\ExploreDb.csproj.CopyComplete

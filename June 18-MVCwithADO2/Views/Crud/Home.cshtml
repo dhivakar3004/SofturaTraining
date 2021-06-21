@@ -1,0 +1,57 @@
+﻿@using System.Data
+@model System.Data.DataTable 
+@{
+    ViewBag.Title = "Home";
+}
+
+
+<html>
+<head>
+    <meta name="viewport" content="Width=device-Width"/>
+    <title>Home</title>
+</head>
+<body>
+    <div>
+        <form method="Post" name="Dispaly">
+            <h2>Home</h2>
+            @Html.ActionLink("Add New Book", "Insert")
+            
+            @Html.ActionLink("See Authors", "AuthorIndex")
+            <br />
+
+            @{
+                if (Model.Rows.Count > 0)
+                {
+                    <table border="1">
+
+                        <thead>
+                            <tr>
+                                <td>Book Id</td>
+                                <td> Title </td>
+                                @*<td>Author Id</td>*@
+                                <td>Author Name</td>
+                                <td>Price </td>
+                                <td> Update Book Here </td>
+                                <td>Delete Book Here </td>
+                            </tr>
+                        </thead>
+                        @foreach (DataRow dr in Model.Rows)
+                        {
+                            <tr>
+                                <td>@dr["BookId"].ToString()</td>
+                                <td>@dr["Title"].ToString()</td>
+                                <td>@dr["AuthorName"].ToString()</td>
+                                <td>@dr["Price"].ToString()</td>
+                                <td>@Html.ActionLink("Edit", "EditBook", new { BookId=dr["bookid"].ToString()  })</td>
+                                <td>@Html.ActionLink("DeleteBook", "DeleteBook", new { BookId = dr["bookid"].ToString() }) </td>
+
+                            </tr>
+                        }
+                    </table>
+
+                }
+            }
+        </form>
+    </div>
+</body>
+</html>

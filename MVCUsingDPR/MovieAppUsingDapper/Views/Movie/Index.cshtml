@@ -1,0 +1,39 @@
+﻿@model IEnumerable<MovieAppUsingDapper.Models.MovieModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.S_No)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Movie_Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.S_No)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Movie_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.S_No }) |
+            @Html.ActionLink("Details", "Details", new {  id=item.S_No}) |
+            @Html.ActionLink("Delete", "Delete", new {  id=item.S_No })
+        </td>
+    </tr>
+}
+
+</table>
